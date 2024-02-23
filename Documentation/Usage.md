@@ -30,6 +30,11 @@ If you need to register a XIB to your `UITableView`, simply use the following fu
 tableView.register(MyFancyCustomCell.self)
 ```
 
+To dequeue a cell with the right type, use the following function:
+```swift
+func dequeueReusableCell<T: UITableViewCell>(_ type: T.Type, for indexPath: IndexPath) -> T
+````
+
 ### Sequence
 
 To get uniques elements of a `Sequence`, use the `uniques` variable.
