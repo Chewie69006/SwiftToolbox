@@ -4,6 +4,7 @@
 
 * [UITableViewCell](#uitableviewcell)
 * [UITableView](#uitableview)
+* [Sequence](#sequence)
 
 
 ### UITableViewCell
@@ -27,4 +28,15 @@ override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexP
 If you need to register a XIB to your `UITableView`, simply use the following function. It will use the `reuseIdentifier` declared in [UITableViewCell](#uitableviewcell).
 ```swift
 tableView.register(MyFancyCustomCell.self)
+```
+
+### Sequence
+
+To get uniques elements of a `Sequence`, use the `uniques` variable.
+
+```swift
+let values = [1, 1, 2, 3, 3, 4]
+let uniques = values.uniques
+
+// uniques contains [1, 2, 3, 4]
 ```
