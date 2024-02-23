@@ -8,6 +8,7 @@
 import UIKit
 
 public extension UITableViewCell {
+    /// Generate an automatic `reuseIdentifier` based on the class name of the cell
     static var reuseIdentifier: String {
         return String(describing: self)
     }
